@@ -26,7 +26,10 @@ delete animal.rabbit;
 console.log("# rabbit 삭제 후 : ", animal);
 ```
 
-이미지
+<PostImage
+  src="https://raw.githubusercontent.com/Codiving/test/main/Images/Temp/JavaScript/Object(객체)%20원소%20삭제하기%2C%20key%20삭제하기/1.png"
+  alt="이미지1"
+/>
 
 위 코드는 `delete 명령어`를 사용하였다. 결과를 확인해보면 `rabbit이 정상적으로 삭제`된 것을 확인할 수 있다. 그러나 `animal 원본 객체에 변경`이 있다.  
 `즉 불변성이 지켜지지 않았다.` 불변성을 지키면서 객체의 key를 삭제하고 싶으면 어떻게 할까?
@@ -48,6 +51,9 @@ console.log("# rabbit 삭제 후 - animal : ", animal);
 console.log("# rabbit 삭제 후 - otherAnimal : ", otherAnimal);
 ```
 
-이미지
+<PostImage
+  src="https://raw.githubusercontent.com/Codiving/test/main/Images/Temp/JavaScript/Object(객체)%20원소%20삭제하기%2C%20key%20삭제하기/2.png"
+  alt="이미지2"
+/>
 
 위 코드는 spread 문법을 사용하여 `원본 데이터의 불변성`을 지킬 수 있었다. 사용에 따라 편한 방법을 사용하면 될 것 같다.
